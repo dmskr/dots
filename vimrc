@@ -29,13 +29,6 @@ set hlsearch    "hilight searches by default
 set nowrap      "dont wrap lines
 set linebreak   "wrap lines at convenient points
 
-if has("gui_macvim")
-  map <D-t> :CtrlP<CR>
-  imap <D-t> <Esc>:CtrlP<CR>
-  map <D-b> :CtrlPBuffer<CR>
-  imap <D-b> <Esc>:CtrlPBuffer<CR>
-endif
-
 filetype plugin indent on
 
 
