@@ -32,6 +32,11 @@ set hlsearch    "hilight searches by default
 set nowrap      "dont wrap lines
 set linebreak   "wrap lines at convenient points
 
+" Simplified git commands
+map gs :Gstatus<CR>
+map gc :Gcommit<CR>
+map gb :Gblame<CR>
+
 filetype plugin indent on
 
 
