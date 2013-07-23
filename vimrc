@@ -15,6 +15,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'godlygeek/csapprox'
 Bundle 'vim-scripts/endwise.vim'
 Bundle 'tpope/vim-fugitive'
+Bundle 'vim-scripts/IndexedSearch'
 
 
 " Allow backspacing over everything in insert mode
