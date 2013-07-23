@@ -19,7 +19,7 @@ Bundle 'digitaltoad/vim-jade'
 Bundle 'groenewege/vim-less'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'scrooloose/nerdcommenter'
-
+Bundle 'scrooloose/nerdtree'
 
 " Allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -40,6 +40,9 @@ set linebreak   "wrap lines at convenient points
 map gs :Gstatus<CR>
 map gc :Gcommit<CR>
 map gb :Gblame<CR>
+
+" Open NerdTree by Ctrl-n
+map <C-n> :NERDTreeToggle<CR>
 
 filetype plugin indent on
 
