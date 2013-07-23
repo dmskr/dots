@@ -10,6 +10,7 @@ Bundle 'gmarik/vundle'
 Bundle 'mileszs/ack.vim'
 Bundle 'vim-scripts/bufexplorer.zip'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'vim-scripts/ColorSchemeMenuMaker'
 
 
 " Allow backspacing over everything in insert mode
