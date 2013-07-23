@@ -21,6 +21,7 @@ Bundle 'vim-scripts/matchit.zip'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-rails'
+Budnle 'vim-ruby/vim-ruby'
 
 " Allow backspacing over everything in insert mode
 set backspace=indent,eol,start
