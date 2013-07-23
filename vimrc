@@ -16,6 +16,7 @@ Bundle 'vim-scripts/endwise.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'vim-scripts/IndexedSearch'
 Bundle 'digitaltoad/vim-jade'
+Bundle 'groenewege/vim-less'
 
 
 " Allow backspacing over everything in insert mode
