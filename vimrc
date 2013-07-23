@@ -24,6 +24,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'scrooloose/syntastic'
+Bundle 'vim-scripts/ZoomWin'
 
 " Allow backspacing over everything in insert mode
 set backspace=indent,eol,start
