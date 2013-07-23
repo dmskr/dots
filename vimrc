@@ -18,6 +18,7 @@ Bundle 'vim-scripts/IndexedSearch'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'groenewege/vim-less'
 Bundle 'vim-scripts/matchit.zip'
+Bundle 'scrooloose/nerdcommenter'
 
 
 " Allow backspacing over everything in insert mode
