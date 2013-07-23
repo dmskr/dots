@@ -11,6 +11,7 @@ Bundle 'mileszs/ack.vim'
 Bundle 'vim-scripts/bufexplorer.zip'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'vim-scripts/ColorSchemeMenuMaker'
+Bundle 'kien/ctrlp.vim'
 
 
 " Allow backspacing over everything in insert mode
@@ -28,6 +29,12 @@ set hlsearch    "hilight searches by default
 set nowrap      "dont wrap lines
 set linebreak   "wrap lines at convenient points
 
+if has("gui_macvim")
+  map <D-t> :CtrlP<CR>
+  imap <D-t> <Esc>:CtrlP<CR>
+  map <D-b> :CtrlPBuffer<CR>
+  imap <D-b> <Esc>:CtrlPBuffer<CR>
+endif
 
 filetype plugin indent on
 
