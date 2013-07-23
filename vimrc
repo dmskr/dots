@@ -8,6 +8,7 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'mileszs/ack.vim'
+Bundle 'vim-scripts/bufexplorer.zip'
 
 
 " Allow backspacing over everything in insert mode
