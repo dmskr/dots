@@ -13,6 +13,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'vim-scripts/ColorSchemeMenuMaker'
 Bundle 'kien/ctrlp.vim'
 Bundle 'godlygeek/csapprox'
+Bundle 'vim-scripts/endwise.vim'
 
 
 " Allow backspacing over everything in insert mode
