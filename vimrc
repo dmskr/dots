@@ -23,6 +23,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-rails'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'scrooloose/syntastic'
 
 " Allow backspacing over everything in insert mode
 set backspace=indent,eol,start
