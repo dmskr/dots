@@ -1,4 +1,4 @@
-" Use Vim settings, rather then Vi settings (much better!).
+﻿" Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 filetype off
@@ -251,7 +251,9 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 set autoindent
+
 autocmd FileType coffee setlocal shiftwidth=2 tabstop=2
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 
 "folding settings
 set foldmethod=indent   "fold based on indent
