@@ -42,6 +42,8 @@ set hlsearch    "hilight searches by default
 set nowrap      "dont wrap lines
 set linebreak   "wrap lines at convenient points
 
+set autoread    "automatically reload files once changed on disk
+
 " Simplified git commands
 map gs :Gstatus<CR>
 map gc :Gcommit<CR>
@@ -52,6 +54,12 @@ let NERDTreeIgnore=['\.rbc$', '\~$']
 map <C-n> :NERDTreeToggle<CR>
 
 map cn :cn<CR>
+
+" CtrlP configuration
+map <C-p> :CtrlP<CR>
+
+" BufExplorer configuration
+map <C-b> \be
 
 " Enable syntastic syntax checking
 let g:syntastic_enable_signs=1
@@ -247,8 +255,8 @@ endif
 
 
 "indent settings
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 set autoindent
 
