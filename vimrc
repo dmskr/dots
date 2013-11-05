@@ -257,7 +257,6 @@ endif
 "indent settings
 set shiftwidth=2
 set softtabstop=2
-set expandtab
 set autoindent
 
 autocmd FileType coffee setlocal shiftwidth=2 tabstop=2
