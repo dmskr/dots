@@ -3,29 +3,66 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'gmarik/vundle'
-Bundle 'mileszs/ack.vim'
-Bundle 'vim-scripts/bufexplorer.zip'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'vim-scripts/ColorSchemeMenuMaker'
-Bundle 'kien/ctrlp.vim'
-Bundle 'vim-scripts/endwise.vim'
-Bundle 'tpope/vim-fugitive'
-Bundle 'vim-scripts/IndexedSearch'
-Bundle 'digitaltoad/vim-jade'
-Bundle 'groenewege/vim-less'
-Bundle 'vim-scripts/matchit.zip'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-rails'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'scrooloose/syntastic'
-Bundle 'vim-scripts/ZoomWin'
-Bundle 'godlygeek/csapprox'
+Plugin 'gmarik/vundle'
+
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
+Plugin 'YankRing.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-surround'
+Plugin 'tsaleh/vim-align'
+Plugin 'austintaylor/vim-indentobject'
+Plugin 'greplace.vim'
+Plugin 'Lokaltog/powerline'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'tpope/vim-endwise'
+Plugin 'Raimondi/delimitMate'
+Plugin 'utl.vim'
+Plugin 'sjl/gundo.vim'
+
+" Ruby/Rails
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-rake'
+Plugin 'ecomba/vim-ruby-refactoring'
+Plugin 'apidock.vim'
+
+" Color Themes
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'tpope/vim-vividchalk'
+Plugin 'vim-scripts/ColorSchemeMenuMaker'
+
+" Syntax Support
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tsaleh/vim-tmux'
+Plugin 'JSON.vim'
+Plugin 'tpope/vim-cucumber'
+Plugin 'tpope/vim-haml'
+Plugin 'tpope/vim-markdown'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'vitaly/vim-syntastic-coffee'
+Plugin 'vim-scripts/jade.vim'
+Plugin 'wavded/vim-stylus'
+Plugin 'pangloss/vim-javascript'
+Plugin 'vitaly/vim-gitignore'
+Plugin 'groenewege/vim-less'
+
+Plugin 'bling/vim-airline'
+
+Plugin 'vim-scripts/ZoomWin'
+Plugin 'godlygeek/csapprox'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+set grepprg=git\ grep
+let g:grep_cmd_opts = '--line-number'
 
 " Allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -57,13 +94,11 @@ map cn :cn<CR>
 
 " CtrlP configuration
 map <C-p> :CtrlP<CR>
-
-" BufExplorer configuration
-map <C-b> \be
+map <C-b> :CtrlPBuffer<CR>
 
 " Enable syntastic syntax checking
 let g:syntastic_enable_signs=1
-let g:syntastic_quiet_warnings=1
+let g:syntastic_quiet_messages = {'level': 'warnings'}
 
 " Use modeline overrides
 set modeline
@@ -256,7 +291,8 @@ endif
 
 "indent settings
 set shiftwidth=2
-set softtabstop=2
+set tabstop=2
+set expandtab
 set autoindent
 
 autocmd FileType coffee setlocal shiftwidth=2 tabstop=2
