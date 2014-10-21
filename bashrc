@@ -1,5 +1,7 @@
 #!/bin/bash
 
+eval "$(rbenv init -)"
+
 # Environment
 export EDITOR="vim"
 export PATH=$PATH:$HOME/.rvm/bin:/Users/dmskr/Downloads/phantomjs-1.8.1-macosx:$HOME/projects/android/tools:$HOME/projects/android/platform-tools
@@ -10,3 +12,5 @@ export HISTCONTROL=erasedups
 export HISTSIZE=10000
 shopt -s histappend
 
+
+[[ -s /Users/dmskr/.nvm/nvm.sh ]] && . /Users/dmskr/.nvm/nvm.sh # This loads NVM
