@@ -6,7 +6,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'gmarik/vundle'
+Plugin 'gmarik/vundle.vim'
 
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
@@ -14,12 +14,9 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Lokaltog/powerline'
 Plugin 'Shutnik/jshint2.vim'
-"Plugin 'tpope/vim-endwise'
-"Plugin 'Raimondi/delimitMate'
-"Plugin 'sjl/gundo.vim'
-
-" Ruby/Rails
-"Plugin 'tpope/vim-rails'
+Plugin 'vim-scripts/grep.vim'
+Plugin 'vim-scripts/gundo'
+Plugin 'mileszs/ack.vim'
 
 " Color Themes
 "Plugin 'altercation/vim-colors-solarized'
@@ -27,19 +24,13 @@ Plugin 'Shutnik/jshint2.vim'
 "Plugin 'vim-scripts/ColorSchemeMenuMaker'
 
 " Syntax Support
-"Plugin 'vim-ruby/vim-ruby'
-"Plugin 'tsaleh/vim-tmux'
-"Plugin 'tpope/vim-haml'
-"Plugin 'tpope/vim-markdown'
+Plugin 'vim-ruby/vim-ruby'
 Plugin 'kchmck/vim-coffee-script'
-"Plugin 'vim-scripts/jade.vim'
-"Plugin 'wavded/vim-stylus'
-"Plugin 'pangloss/vim-javascript'
-"Plugin 'vitaly/vim-gitignore'
+Plugin 'pangloss/vim-javascript'
+Plugin 'vitaly/vim-gitignore'
 Plugin 'groenewege/vim-less'
 
-"Plugin 'vim-scripts/ZoomWin'
-"Plugin 'godlygeek/csapprox'
+Plugin 'godlygeek/csapprox'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -82,7 +73,6 @@ map <C-b> :CtrlPBuffer<CR>
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)|node_modules$'
-
 
 " Enable syntastic syntax checking
 let g:syntastic_enable_signs=1
@@ -213,4 +203,13 @@ filetype plugin indent on
 " Disable the annoying .swp files
 set noswapfile
 
+set showbreak=↪
+
+" Enable spell checking in commits
+autocmd FileType gitcommit setlocal spell " Git commits.
+autocmd FileType svn       setlocal spell " Subversion commits.
+autocmd FileType asciidoc  setlocal spell " Mercurial commits.
+
+" Ignore whitespaces in diff
+set diffopt=iwhite
 
